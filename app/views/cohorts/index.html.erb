@@ -5,8 +5,7 @@
   <% @cohorts.each do |cohort| %>
     <tr>
       <td><%= cohort.name %></td>
-      <td><%= link_to("Edit", edit_cohort_path(cohort)) %></td>
-    </tr>
+      <td><%= link_to("Edit", edit_cohort_path(cohort)) %>
   <% end %>
 </table>
 </div>

@@ -2,5 +2,6 @@
 
 FactoryGirl.define do
   factory :request do
+  	description 'fuck'
   end
 end
