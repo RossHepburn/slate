@@ -4,6 +4,7 @@
   <div class="text-center">
     <div class="col-md-5">
       <h3>Today's average wait time</h3>
+<<<<<<< HEAD
         <div class="grey_box">
           <h2 class="vert_align"><%= pluralize(@stats[:todays_wait_time], 'Minute') %></h2>
         </div>
@@ -13,6 +14,13 @@
         <div class="grey_box">
           <h2 class="vert_align"><%= pluralize(@stats[:todays_queue], 'Student') %></h2>
         </div>
+=======
+      <h2><%= pluralize(@stats[:todays_wait_time], 'Minute') %></h2>
+    </div>
+    <div class="col-md-5">
+      <h3>Today's average queue length</h3>
+      <h2><%= pluralize(@stats[:todays_queue], 'Student') %></h2>
+>>>>>>> 30741bca0b051a94f886f9462641ab75c4c53739
     </div>
   </div>
 
@@ -37,4 +45,8 @@
       <%= line_chart @stats[:weekly_issues_average_over_day], library: {backgroundColor: "#EDF0F1"} %>
     </div>
   </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 30741bca0b051a94f886f9462641ab75c4c53739
 </div>
